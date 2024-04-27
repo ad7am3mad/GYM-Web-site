@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.video {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background-color: #80808091;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+header {
+    background-color: #80808091;
+    position: sticky;
+    top: 0;
+    height: 60px;
+}
+.head {
+    margin-left: 5%;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+
+.head span {
+    color: orangered;
+    transition: 0.5s;
+}
+
+.head:hover {
+    color: orangered;
+}
+
+.head:hover span {
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+}
+nav .header {
+    list-style: none;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.header li a {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: 0.5s;
+}
+
+
+.header li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+.header li a:hover {
+    letter-spacing: 3px;
+}
+
+.header li a:hover::before {
+    width: 100%;
+}
+
+
+#container {
+    height: 91vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h3 {
+    color: white !important;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hcontainer {
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.hcontainer span {
+    color: orangered;
+}
+
+button {
+    padding: 5px 8px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    border: 2px solid orangered;
+    border-radius: 8px !important;
+    cursor: pointer;
+    transition: .5s;
+}
+#plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    background: url('images/contact-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 0;
+}
+.gold,
+.platinum,
+.silver {
+    border: 2px solid orangered;
+    border-radius: 10px;
+    margin-right: 20px;
+    text-align: center;
+    width: 30%;
+    height: 60%;
+}
+
+.gold h1,
+.platinum h1,
+.silver h1 {
+    color: orange;
+    margin: 10px auto;
+    height: 25%;
+    width: 90%;
+}
+
+.gold ul,
+.platinum ul,
+.silver ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.gold ul li,
+.platinum ul li,
+.silver ul li{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 20px;
+    left: 50%;
+}
+
+button:hover {
+    letter-spacing: 1px;
+    background-color: orangered;
+}
+
+.feature-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.feature-item .right-content {
+    margin-left: 20px;
+}
+
+.feature-item .right-content a.text-button {
+    margin-top: -5px;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ed563b;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.section-heading h2 {
+    margin-left: 30%;
+    margin-top: 40px;
+}
+
+.section-heading img {
+    margin-left: 45%;
+    margin-bottom: 8px;
+}
+
+#cu{
+    
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 200px;
+    color: white;
+}
+.m{
+    margin-top: 20px;
+}
+.a{
+    margin-top: -14px;
+}
+.b{
+    margin-top: 70px;
+    
+}
+
+#bodycu{
+    width:100% ;
+    height: 700px;
+   
+    background-color: rgb(32, 69, 100);
+}
+
+#bcu {
+    background: #016ABC;
+    color: white;
+    border: 1px solid white;
+    width: 225px;
+    height: 44px;
+}
+#buttonf{
+    height: 38px;
+    background-color: steelblue;
+    border-color: steelblue;
+}
+footer{
+    background-color: beige;
+}
